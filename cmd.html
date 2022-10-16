@@ -1,0 +1,32 @@
+PASSO 1 
+PROCURAR TEMPLATE Bootstrap
+CRIAR ARUIVO INDEX.HTML
+ 
+PASSO 2
+Procurar o CDN de Instalação do Vue JS 
+<script src="https://unpkg.com/vue@next" defer></script>
+
+
+index .html 
+Passo 3 
+Criando o js da aplicação defer significa que vai carregar depois do HTML 
+<script src="src/app.js" defer></script>
+
+Elemento principal para inicialização 
+<div id="app"> </div>
+
+
+app.js  
+
+
+const MyNameApp = {
+  data() {
+    return {
+      name: "Fulano",
+      age: 30   
+     }
+  }
+}
+
+Vue.createApp(MyNameApp).mount('#app')
+
